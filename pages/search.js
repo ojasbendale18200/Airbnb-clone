@@ -4,6 +4,7 @@ import React from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import InfoCard from "../components/InfoCard";
+import Map from "../components/Map";
 
 function Search({ searchResult }) {
   const router = useRouter();
@@ -49,6 +50,10 @@ function Search({ searchResult }) {
               />
             ))}
           </div>
+        </section>
+
+        <section className="hidden xl:inline-flex xl:min-w-[600px]">
+          <Map searchResult={searchResult} />
         </section>
       </main>
 
